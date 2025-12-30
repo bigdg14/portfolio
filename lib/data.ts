@@ -37,7 +37,7 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'E-commerce Store with AI Chatbot',
+    title: 'SmartCart',
     description: 'Advanced e-commerce platform with integrated AI shopping assistant',
     longDescription: 'A next-generation e-commerce platform that combines traditional shopping features with an AI-powered shopping assistant to help customers find products and answer questions.',
     techStack: ['Next.js', 'TypeScript', 'OpenAI API', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
@@ -47,9 +47,9 @@ export const projects: Project[] = [
       'Automated customer support',
       'Personalized shopping experience'
     ],
-    image: '/images/ecommerce-ai.jpg',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/yourusername/ecommerce-ai',
+    image: '/images/screenshots/smartcart.png',
+    liveUrl: 'https://smartcart-rho.vercel.app/',
+    githubUrl: 'https://github.com/bigdg14/e-store-ai-chatbot',
     category: 'web'
   },
   {
