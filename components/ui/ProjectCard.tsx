@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '@/lib/types';
+import { Button } from '@/components/ui/button';
 
 interface ProjectCardProps {
   project: Project;
@@ -113,18 +114,19 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
             animate={{ opacity: isHovered ? 1 : 0 }}
             className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center gap-4"
           >
-            <motion.button
+            <Button
               onClick={(e) => {
                 e.stopPropagation();
                 onClick();
               }}
-              className="px-4 py-2 bg-white text-black rounded-lg font-medium flex items-center gap-2"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              variant="default"
+              className="bg-white text-black hover:bg-gray-100"
+              type="button"
+              aria-label={`View details for ${project.title}`}
             >
               <ExternalLink size={18} />
               View Details
-            </motion.button>
+            </Button>
           </motion.div>
         </div>
 
