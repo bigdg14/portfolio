@@ -64,9 +64,9 @@ export const projects: Project[] = [
       'Game state persistence',
       'Animated game pieces and win detection'
     ],
-    image: '/images/connect4.jpg',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/yourusername/connect4',
+    image: '/images/screenshots/connect-4.png',
+    liveUrl: 'https://connect-4-sand.vercel.app/',
+    githubUrl: 'https://github.com/bigdg14/connect-4',
     category: 'game'
   },
   {
