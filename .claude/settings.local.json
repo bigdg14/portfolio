@@ -15,7 +15,13 @@
       "Bash(timeout /t 5 /nobreak)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(if exist nul del nul)"
+      "Bash(if exist nul del nul)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Modern developer portfolio\n\n- Next.js 14+ with TypeScript and Tailwind CSS\n- Animated hero section with gradient effects\n- 3D project cards with parallax effects\n- Skills section with categorized tech stack\n- Contact form with Resend email and Neon database integration\n- Responsive design with dark mode\n- Nexus Noir project with live screenshot\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npx shadcn@latest init:*)"
     ]
   }
 }

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, Github, Check } from 'lucide-react';
 import { Project } from '@/lib/types';
+import { Button } from '@/components/ui/button';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -52,12 +53,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               className="relative w-full max-w-4xl max-h-[90vh] bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 pointer-events-auto"
             >
               {/* Close button */}
-              <button
+              <Button
                 onClick={onClose}
-                className="absolute top-4 right-4 z-10 p-2 bg-gray-800/80 hover:bg-gray-700 rounded-lg transition-colors"
+                variant="ghost"
+                size="icon"
+                className="absolute top-4 right-4 z-10 bg-gray-800/80 hover:bg-gray-700"
+                aria-label="Close modal"
+                type="button"
               >
                 <X size={24} className="text-gray-300" />
-              </button>
+              </Button>
 
               {/* Scrollable content */}
               <div className="overflow-y-auto max-h-[90vh] scrollbar-thin scrollbar-thumb-primary-500 scrollbar-track-gray-800">
@@ -140,30 +145,41 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   {/* Links */}
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     {project.liveUrl && (
-                      <motion.a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-primary rounded-lg text-white font-medium hover:shadow-lg hover:shadow-primary-500/50 transition-all"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                      <Button
+                        asChild
+                        size="lg"
+                        className="bg-gradient-primary hover:shadow-lg hover:shadow-primary-500/50"
                       >
-                        <ExternalLink size={20} />
-                        Visit Live Site
-                      </motion.a>
+                        <motion.a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <ExternalLink size={20} />
+                          Visit Live Site
+                        </motion.a>
+                      </Button>
                     )}
                     {project.githubUrl && (
-                      <motion.a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg text-white font-medium transition-all border border-gray-700"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="lg"
+                        className="bg-gray-800 hover:bg-gray-700 border-gray-700"
                       >
-                        <Github size={20} />
-                        View Source Code
-                      </motion.a>
+                        <motion.a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <Github size={20} />
+                          View Source Code
+                        </motion.a>
+                      </Button>
                     )}
                   </div>
                 </div>
