@@ -8,7 +8,7 @@ export interface Project {
   image: string;
   liveUrl?: string;
   githubUrl?: string;
-  category: 'web' | 'ai' | 'game' | 'social';
+  category: 'web' | 'ai' | 'game' | 'social' | 'data';
 }
 
 export interface TechStack {
