@@ -58,7 +58,6 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
       transition: {
         duration: 0.6,
         delay: index * 0.1,
-        ease: 'easeOut',
       },
     },
   };
