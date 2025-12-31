@@ -105,6 +105,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               {project.category === 'ai' && '🤖'}
               {project.category === 'game' && '🎮'}
               {project.category === 'social' && '💬'}
+              {project.category === 'data' && '📊'}
             </div>
           )}
 

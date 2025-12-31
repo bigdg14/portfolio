@@ -83,6 +83,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                       {project.category === 'ai' && '🤖'}
                       {project.category === 'game' && '🎮'}
                       {project.category === 'social' && '💬'}
+                      {project.category === 'data' && '📊'}
                     </div>
                   )}
                 </div>

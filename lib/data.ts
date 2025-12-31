@@ -2,90 +2,102 @@ import { Project, TechStack } from './types';
 
 export const projects: Project[] = [
   {
-    id: '1',
-    title: 'E-commerce Store',
-    description: 'A full-featured e-commerce platform with product management, shopping cart, and payment integration',
-    longDescription: 'A comprehensive e-commerce solution built with Next.js and TypeScript, featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard.',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'PostgreSQL', 'Prisma'],
-    features: [
-      'Real-time inventory management',
-      'Secure payment processing with Stripe',
-      'Advanced product filtering and search',
-      'Responsive admin dashboard'
+    id: "1",
+    title: "CryptoTrack",
+    description:
+      "Real-time cryptocurrency tracking dashboard with live price updates and interactive charts",
+    longDescription:
+      "A comprehensive cryptocurrency dashboard built with Next.js and TypeScript, featuring real-time price tracking, interactive charts, portfolio management, and market analytics powered by CoinGecko API.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Recharts",
+      "CoinGecko API",
+      "React Query",
     ],
-    image: '/images/ecommerce.jpg',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/yourusername/ecommerce',
-    category: 'web'
+    features: [
+      "Real-time cryptocurrency price tracking",
+      "Interactive charts and graphs",
+      "Portfolio management and analytics",
+      "Market trends and historical data",
+    ],
+    image: "/images/screenshots/crypto-track.png",
+    liveUrl: "https://crypto-dashboard-mu-ten.vercel.app/",
+    githubUrl: "https://github.com/bigdg14/crypto-dashboard",
+    category: "data",
   },
   {
-    id: '2',
-    title: 'AI Chatbot',
-    description: 'Intelligent chatbot powered by OpenAI GPT-4 with context-aware responses',
-    longDescription: 'An advanced AI chatbot leveraging OpenAI\'s GPT-4 API with conversation history, context awareness, and natural language processing capabilities.',
-    techStack: ['Next.js', 'TypeScript', 'OpenAI API', 'React', 'Tailwind CSS', 'Vercel AI SDK'],
-    features: [
-      'Context-aware conversations',
-      'Real-time streaming responses',
-      'Conversation history management',
-      'Custom personality and tone settings'
+    id: "2",
+    title: "SmartCart",
+    description:
+      "Advanced e-commerce platform with integrated AI shopping assistant",
+    longDescription:
+      "A next-generation e-commerce platform that combines traditional shopping features with an AI-powered shopping assistant to help customers find products and answer questions.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "OpenAI API",
+      "Stripe",
+      "PostgreSQL",
+      "Tailwind CSS",
     ],
-    image: '/images/chatbot.jpg',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/yourusername/ai-chatbot',
-    category: 'ai'
+    features: [
+      "AI-powered product recommendations",
+      "Natural language product search",
+      "Automated customer support",
+      "Personalized shopping experience",
+    ],
+    image: "/images/screenshots/smartcart.png",
+    liveUrl: "https://smartcart-rho.vercel.app/",
+    githubUrl: "https://github.com/bigdg14/e-store-ai-chatbot",
+    category: "web",
   },
   {
-    id: '3',
-    title: 'SmartCart',
-    description: 'Advanced e-commerce platform with integrated AI shopping assistant',
-    longDescription: 'A next-generation e-commerce platform that combines traditional shopping features with an AI-powered shopping assistant to help customers find products and answer questions.',
-    techStack: ['Next.js', 'TypeScript', 'OpenAI API', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
+    id: "3",
+    title: "Connect-4 Game",
+    description:
+      "Interactive Connect-4 game with AI opponent and multiplayer support",
+    longDescription:
+      "A fully functional Connect-4 game featuring both single-player mode with AI opponent and real-time multiplayer capabilities.",
+    techStack: ["React", "TypeScript", "Socket.io", "Node.js", "Tailwind CSS"],
     features: [
-      'AI-powered product recommendations',
-      'Natural language product search',
-      'Automated customer support',
-      'Personalized shopping experience'
+      "Single-player vs AI with multiple difficulty levels",
+      "Real-time multiplayer mode",
+      "Game state persistence",
+      "Animated game pieces and win detection",
     ],
-    image: '/images/screenshots/smartcart.png',
-    liveUrl: 'https://smartcart-rho.vercel.app/',
-    githubUrl: 'https://github.com/bigdg14/e-store-ai-chatbot',
-    category: 'web'
+    image: "/images/screenshots/connect-4.png",
+    liveUrl: "https://connect-4-sand.vercel.app/",
+    githubUrl: "https://github.com/bigdg14/connect-4",
+    category: "game",
   },
   {
-    id: '4',
-    title: 'Connect-4 Game',
-    description: 'Interactive Connect-4 game with AI opponent and multiplayer support',
-    longDescription: 'A fully functional Connect-4 game featuring both single-player mode with AI opponent and real-time multiplayer capabilities.',
-    techStack: ['React', 'TypeScript', 'Socket.io', 'Node.js', 'Tailwind CSS'],
-    features: [
-      'Single-player vs AI with multiple difficulty levels',
-      'Real-time multiplayer mode',
-      'Game state persistence',
-      'Animated game pieces and win detection'
+    id: "4",
+    title: "Nexus Noir",
+    description:
+      "Full-stack social media application with real-time updates and user interactions",
+    longDescription:
+      "A modern social media platform featuring real-time posts, likes, comments, user profiles, and friend connections with a focus on performance and user experience.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+      "WebSockets",
     ],
-    image: '/images/screenshots/connect-4.png',
-    liveUrl: 'https://connect-4-sand.vercel.app/',
-    githubUrl: 'https://github.com/bigdg14/connect-4',
-    category: 'game'
+    features: [
+      "Real-time post updates and notifications",
+      "User authentication and profiles",
+      "Like, comment, and share functionality",
+      "Image upload and media gallery",
+    ],
+    image: "/images/screenshots/nexus-noir.png",
+    liveUrl: "https://nexus-noir.vercel.app/",
+    githubUrl: "https://github.com/bigdg14/nexus-noir",
+    category: "social",
   },
-  {
-    id: '5',
-    title: 'Nexus Noir',
-    description: 'Full-stack social media application with real-time updates and user interactions',
-    longDescription: 'A modern social media platform featuring real-time posts, likes, comments, user profiles, and friend connections with a focus on performance and user experience.',
-    techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'WebSockets'],
-    features: [
-      'Real-time post updates and notifications',
-      'User authentication and profiles',
-      'Like, comment, and share functionality',
-      'Image upload and media gallery'
-    ],
-    image: '/images/screenshots/nexus-noir.png',
-    liveUrl: 'https://nexus-noir.vercel.app/',
-    githubUrl: 'https://github.com/bigdg14/nexus-noir',
-    category: 'social'
-  }
 ];
 
 export const techStack: TechStack[] = [
